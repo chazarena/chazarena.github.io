@@ -354,6 +354,37 @@ nav ul a:hover { color: var(--ink); }
 
 .timeline-right .tech-pills { margin-top: 0.25rem; }
 
+.timeline-item-link {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s;
+  border-radius: var(--radius);
+  margin: 0 -1rem;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.timeline-item-link:last-child { border-bottom: none; }
+
+.timeline-item-link:hover { background: rgba(0,0,0,0.03); }
+
+.timeline-item-link:hover .card-arrow {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+@media (max-width: 700px) {
+  .timeline-item-link {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin: 0 -0.5rem;
+    padding: 1.5rem 0.5rem;
+  }
+}
+
 /* ── About ── */
 .about-grid {
   display: grid;
