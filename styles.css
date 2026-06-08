@@ -234,7 +234,7 @@ nav ul a:hover { color: var(--ink); }
 /* ── Sub-project cards ── */
 .sub-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   margin-top: 1.5rem;
 }
@@ -244,6 +244,32 @@ nav ul a:hover { color: var(--ink); }
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1.25rem;
+}
+
+.sub-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.18s, box-shadow 0.18s, transform 0.15s;
+}
+
+.sub-card-link:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 16px rgba(26,86,219,0.08);
+  transform: translateY(-2px);
+}
+
+.card-arrow {
+  font-size: 0.85rem;
+  color: var(--ink-3);
+  margin-left: 0.25rem;
+  transition: color 0.15s, transform 0.15s;
+  display: inline-block;
+}
+
+.sub-card-link:hover .card-arrow {
+  color: var(--accent);
+  transform: translateX(3px);
 }
 
 .sub-card h4 {
