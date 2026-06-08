@@ -216,6 +216,7 @@ nav {
   border-radius: var(--radius);
   display: block;
   object-fit: cover;
+  image-orientation: from-image;
 }
 
 .proj-img-dark {
