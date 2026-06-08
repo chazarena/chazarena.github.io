@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Charlie Herman — Mechanical Engineer</title>
+  <title>Charles Herman — Mechanical Engineer</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,10 +13,11 @@
 
   <!-- NAV -->
   <nav>
-    <span class="nav-name">Charlie Herman</span>
+    <span class="nav-name">Charles Herman</span>
     <ul>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -24,10 +25,16 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-inner">
-      <p class="hero-tag">Mechanical Engineer</p>
-      <h1>Designing systems<br>that move, launch,<br>and endure.</h1>
-      <p class="hero-sub">Rocketry · Automotive · Structural Design · International Development</p>
-      <a href="#projects" class="btn">View my work</a>
+      <p class="hero-tag">Mechanical Engineering · University of Melbourne</p>
+      <h1>Rocketry. Automotive.<br>Hands-on engineering.</h1>
+      <p class="hero-sub">
+        Mechanical engineering student with experience in hybrid propulsion, CAD/FEA,
+        and multidisciplinary team leadership. Chief Engineer, ARES Rocketry.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
     </div>
   </section>
 
@@ -36,45 +43,50 @@
     <div class="container">
       <h2 class="section-title">Projects</h2>
 
-      <!-- Rocketry -->
+      <!-- ARES Rocketry -->
       <div class="project-card featured">
         <div class="project-meta">
-          <span class="tag">Rocketry · University</span>
-          <span class="tag tag-year">2023 – 2025</span>
+          <span class="tag">Rocketry · ARES — University of Melbourne</span>
+          <span class="tag tag-year">Mar 2024 – Present</span>
         </div>
-        <h3>University Rocketry Program</h3>
-        <p class="project-role">Chief Engineer</p>
+        <h3>ARES High-Powered Rocketry Team</h3>
+        <p class="project-role">Chief Engineer (Jul 2025 – Present) · Propulsion & Recovery Sub-Team (Mar 2024 – Jul 2025)</p>
         <p class="project-desc">
-          Led technical direction for a student rocketry team, overseeing propulsion, structures, and manufacturing.
-          Responsible for team-wide engineering decisions, safety reviews, and launch readiness sign-off.
+          Leading the technical development of high-powered experimental rockets, coordinating multidisciplinary
+          teams and overseeing system integration. Responsible for design robustness, competition compliance,
+          and component testing and validation across all sub-systems.
         </p>
 
         <div class="sub-projects">
           <div class="sub-card">
             <h4>Hybrid Motor Sizing</h4>
-            <p>Developed MATLAB scripts to model and size a hybrid rocket motor, iterating on oxidiser–fuel ratios,
-            chamber pressure, and nozzle geometry to meet target thrust and specific impulse requirements.</p>
+            <p>Developed MATLAB-based scripts to size a hybrid rocket motor — iterating on oxidiser–fuel
+            ratios, chamber pressure, and nozzle geometry to determine optimal combustion chamber dimensions
+            for target thrust and Isp.</p>
             <div class="tech-pills">
-              <span>MATLAB</span><span>Propulsion</span><span>Thermodynamics</span>
+              <span>MATLAB</span><span>Propulsion</span><span>Hybrid Motors</span>
             </div>
           </div>
           <div class="sub-card">
-            <h4>Fuel Grain Spin Casting Machine</h4>
-            <p>Designed and built a spin casting rig to produce centrifugally-cast HTPB fuel grains with
-            consistent port geometry, eliminating voids and improving burn uniformity.</p>
+            <h4>Paraffin Fuel Grain Spin-Cast System</h4>
+            <p>Fabricated a spin-casting rig for manufacturing paraffin fuel grains with consistent port
+            geometry. Designed tooling and refined the casting process to minimise voids and improve
+            burn uniformity.</p>
             <div class="tech-pills">
-              <span>Machine Design</span><span>Manufacturing</span><span>HTPB</span>
+              <span>Machine Design</span><span>Manufacturing</span><span>Paraffin</span>
             </div>
           </div>
           <div class="sub-card">
-            <h4>Fuel Grain Casting Process</h4>
-            <p>Developed and refined the end-to-end process for mixing, degassing, and casting HTPB propellant
-            grains — from tooling design through post-cure inspection and dimensional verification.</p>
+            <h4>Recovery & Parachute Systems</h4>
+            <p>Built and tested parachute deployment systems for flight recovery. Completed LDR, PCR, and CDR
+            milestone reviews, and co-authored technical documentation for competition judges.</p>
             <div class="tech-pills">
-              <span>Process Engineering</span><span>Materials</span><span>QA</span>
+              <span>Recovery Systems</span><span>Testing</span><span>Technical Documentation</span>
             </div>
           </div>
         </div>
+
+        <p class="project-note">Delivered technical presentations at the Victorian Rocketry Association.</p>
       </div>
 
       <!-- Tube Buggy -->
@@ -89,7 +101,7 @@
           Work included CAD modelling, FEA for structural validation, and materials selection.
         </p>
         <div class="tech-pills">
-          <span>CAD</span><span>FEA</span><span>Chassis Design</span><span>Suspension</span>
+          <span>SolidWorks</span><span>FEA</span><span>Chassis Design</span><span>GD&amp;T</span>
         </div>
       </div>
 
@@ -97,15 +109,15 @@
       <div class="project-card">
         <div class="project-meta">
           <span class="tag">Engineers Without Borders</span>
+          <span class="tag tag-year">Nov – Dec 2024</span>
         </div>
-        <h3>EWB Challenge</h3>
+        <h3>Regioneering — STEM Outreach</h3>
         <p class="project-desc">
-          Applied engineering design thinking to a real-world humanitarian challenge,
-          developing solutions in collaboration with partner communities.
-          Focused on low-cost, locally-manufacturable designs that meet the needs of under-resourced communities.
+          Volunteered on an outreach trip to rural Victorian primary schools as part of Engineers Without Borders,
+          aimed at increasing STEM engagement in under-resourced communities.
         </p>
         <div class="tech-pills">
-          <span>Human-Centred Design</span><span>Sustainable Engineering</span>
+          <span>Outreach</span><span>STEM Education</span><span>Community Engagement</span>
         </div>
       </div>
 
@@ -121,30 +133,84 @@
 
         <div class="timeline-item">
           <div class="timeline-left">
-            <span class="tl-company">Toyota</span>
-            <span class="tl-date">2024 · Internship</span>
+            <span class="tl-company">Toyota Motor Corporation Australia</span>
+            <span class="tl-date">Nov 2025 – Mar 2026</span>
           </div>
           <div class="timeline-right">
-            <h4>Engineering Intern</h4>
+            <h4>Undergraduate Engineer</h4>
             <p>
-              Contributed to [team/department] at Toyota, working on [brief description of work —
-              e.g., manufacturing process improvements, tooling design, or quality systems].
-              Gained hands-on experience in a high-volume automotive production environment.
+              Worked within the Product Planning and Development division to support mechanical design
+              and operational efficiency. Responsibilities included part fitment, CAD modelling in CATIA,
+              field testing, FEA validation, and data analysis to support design optimisation.
+            </p>
+            <div class="tech-pills">
+              <span>CATIA</span><span>FEA</span><span>Product Development</span><span>Data Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="tl-company">ARES Rocketry — Chief Engineer</span>
+            <span class="tl-date">Jul 2025 – Present</span>
+          </div>
+          <div class="timeline-right">
+            <h4>Chief Engineer</h4>
+            <p>
+              Leading technical development of high-powered experimental rockets at the University of Melbourne.
+              Coordinating multidisciplinary sub-teams, overseeing system integration, and ensuring designs
+              meet competition requirements through structured testing and validation.
             </p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-left">
-            <span class="tl-company">ASCOT Consulting Engineers</span>
-            <span class="tl-date">2024 · Internship</span>
+            <span class="tl-company">Ascot Consulting Engineers</span>
+            <span class="tl-date">Jul – Nov 2025</span>
           </div>
           <div class="timeline-right">
-            <h4>Engineering Intern</h4>
+            <h4>Undergraduate Engineer</h4>
             <p>
-              Supported a multi-disciplinary building services team at ASCOT, a Melbourne-based
-              consulting firm specialising in Mechanical, Electrical, Hydraulic, and Fire Safety engineering.
-              Assisted in [design deliverables / documentation / site reviews].
+              Supported senior engineers on building services projects across multiple disciplines.
+              Attended client meetings, developed practical skills in AutoCAD and Revit, and contributed
+              to documentation and design deliverables.
+            </p>
+            <div class="tech-pills">
+              <span>AutoCAD</span><span>Revit</span><span>Building Services</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="tl-company">ARES Rocketry — Propulsion & Recovery</span>
+            <span class="tl-date">Mar 2024 – Jul 2025</span>
+          </div>
+          <div class="timeline-right">
+            <h4>Sub-Team Member</h4>
+            <p>
+              Completed LDR, PCR, and CDR milestone reviews. Fabricated a spin-cast system for paraffin
+              fuel grain manufacturing, developed MATLAB motor sizing scripts, and built and tested
+              parachute deployment systems. Delivered technical presentations at the Victorian Rocketry
+              Association and co-authored competition documentation.
+            </p>
+            <div class="tech-pills">
+              <span>MATLAB</span><span>Fabrication</span><span>Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="tl-company">Engineers Without Borders</span>
+            <span class="tl-date">Nov – Dec 2024</span>
+          </div>
+          <div class="timeline-right">
+            <h4>Regioneering Volunteer</h4>
+            <p>
+              Participated in an outreach trip to rural Victorian primary schools aimed at increasing
+              STEM engagement.
             </p>
           </div>
         </div>
@@ -154,46 +220,56 @@
   </section>
 
   <!-- ABOUT -->
-  <section class="section">
+  <section id="about" class="section">
     <div class="container about-grid">
       <div>
         <h2 class="section-title">About</h2>
         <p>
-          I'm a mechanical engineering student with a focus on propulsion, structural design,
-          and hands-on build experience. Outside of rocketry, I'm drawn to problems where
-          precision manufacturing meets real-world constraints — whether that's a race buggy,
-          an aid project, or an automotive production line.
+          I'm a mechanical engineering student at the University of Melbourne (graduating 2026) with
+          hands-on experience in rocketry, mechanical design, and technical presentation. I contribute
+          to hybrid propulsion development and recovery systems, and currently serve as Chief Engineer
+          of ARES, the university's high-powered rocket team.
         </p>
         <p>
-          Based in Melbourne, Australia.
+          Known for practical problem-solving and effective collaboration across technical groups — most
+          recently applied in an undergraduate engineering role at Toyota Motor Corporation Australia.
+        </p>
+        <p class="about-edu">
+          <strong>University of Melbourne</strong> — B.Sc. Mechanical Engineering Systems, Expected 2026<br>
+          <strong>Wesley College</strong> — International Baccalaureate, 2021
         </p>
       </div>
       <div class="skills-grid">
         <div class="skill-group">
-          <h5>Design & Analysis</h5>
+          <h5>Software</h5>
           <ul>
+            <li>SolidWorks</li>
+            <li>Onshape / Fusion 360</li>
+            <li>CATIA / CREO</li>
             <li>MATLAB</li>
-            <li>CAD (SolidWorks / Fusion)</li>
+            <li>AutoCAD / Revit</li>
+            <li>Dewesoft</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h5>Fabrication</h5>
+          <ul>
+            <li>Spin casting</li>
+            <li>3D Printing</li>
+            <li>Metalworking</li>
+            <li>Soldering</li>
+            <li>Vehicle assembly</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h5>Engineering</h5>
+          <ul>
             <li>FEA</li>
-            <li>Propulsion modelling</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h5>Manufacturing</h5>
-          <ul>
-            <li>Casting & moulding</li>
-            <li>Machine design</li>
-            <li>Tube fabrication</li>
-            <li>Composites</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h5>Domains</h5>
-          <ul>
-            <li>Rocketry & propulsion</li>
-            <li>Automotive</li>
-            <li>Building services</li>
-            <li>International development</li>
+            <li>GD&amp;T</li>
+            <li>DFM / CNC</li>
+            <li>Strain gauging</li>
+            <li>Model analysis</li>
+            <li>Technical writing</li>
           </ul>
         </div>
       </div>
@@ -205,14 +281,17 @@
     <div class="container contact-inner">
       <h2>Get in touch</h2>
       <p>Open to graduate roles, internships, and project collaborations.</p>
-      <a href="mailto:chazaherman@gmail.com" class="btn btn-light">chazaherman@gmail.com</a>
+      <div class="contact-links">
+        <a href="mailto:herman.charlie@outlook.com" class="btn btn-light">herman.charlie@outlook.com</a>
+        <a href="https://linkedin.com/in/charleshermanli" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <span>© 2026 Charlie Herman</span>
-      <a href="https://github.com/charlieherman" target="_blank" rel="noopener">GitHub</a>
+      <span>© 2026 Charles Herman</span>
+      <a href="https://github.com/chazarena" target="_blank" rel="noopener">GitHub</a>
     </div>
   </footer>
 
