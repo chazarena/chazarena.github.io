@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackable Planetary Gearbox · Charles Herman</title>
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      Back
+    </a>
+    <span class="nav-name">Charles Herman</span>
+  </nav>
+
+  <header class="proj-hero">
+    <div class="proj-hero-inner">
+      <div class="proj-tag-row">
+        <span class="tag">University of Melbourne · Machine Design</span>
+        <span class="tag">Subject Project</span>
+      </div>
+      <h1>Stackable Planetary Gearbox</h1>
+      <p class="proj-hero-sub">
+        Designed a fully 3D-printable stackable planetary gearbox from scratch — covering involute gear
+        geometry, stage ratio selection, tolerance stack-up for FDM parts, and full assembly build and validation.
+      </p>
+    </div>
+  </header>
+
+  <main class="proj-content">
+
+    <h2>Overview</h2>
+    <p>
+      The brief required the design, manufacture, and assembly of a functional planetary gearbox using
+      only 3D-printed components and standard hardware. The gearbox needed to be modular —
+      stages could be stacked to increase the overall gear reduction — while remaining compact enough
+      to hold in one hand.
+    </p>
+
+    <div class="img-grid img-grid-2">
+      <img src="images/gearbox-cad-full.png" alt="SolidWorks full assembly render of the planetary gearbox" class="proj-img proj-img-dark" />
+      <img src="images/gearbox-cad-section.png" alt="SolidWorks cross-section render revealing internal gear stages" class="proj-img proj-img-dark" />
+    </div>
+    <p class="img-caption">SolidWorks renders — full assembly (left) and cross-section showing internal gear stages (right).</p>
+
+    <hr class="divider">
+
+    <h2>Design</h2>
+    <p>
+      Each stage consists of a sun gear, three planet gears, a planet carrier, and a fixed ring gear.
+      The ring gear is integrated into the outer housing to minimise part count. Key design decisions:
+    </p>
+    <ul>
+      <li>Involute gear tooth geometry calculated from module and tooth count to ensure correct mesh across stages</li>
+      <li>Planet carrier designed with press-fit axle pins to hold planet gear positions under load</li>
+      <li>Inter-stage spline interface allows stages to stack and lock axially without fasteners</li>
+      <li>All clearances increased from theoretical values to account for FDM dimensional variation</li>
+      <li>Output shaft supported by a printed bearing race to reduce wobble under load</li>
+    </ul>
+
+    <div class="img-grid img-grid-1">
+      <img src="images/gearbox-exploded.jpg" alt="All planetary gearbox components laid out on workbench before assembly" class="proj-img" />
+    </div>
+    <p class="img-caption">All components laid out prior to assembly — sun gears, planet carriers, ring housings, and output stages.</p>
+
+    <hr class="divider">
+
+    <h2>Build & Assembly</h2>
+    <p>
+      All parts were printed in PLA on an FDM printer. The assembly process validated the tolerance
+      decisions — fits that were too tight were identified and the relevant clearances updated in the
+      model before reprinting. The final assembled gearbox ran smoothly by hand with no binding across
+      all stages.
+    </p>
+
+    <div class="img-grid img-grid-2">
+      <img src="images/gearbox-assembly.jpg" alt="Assembled planetary gearbox stage held in hand, showing ring gear and output face" class="proj-img" />
+      <div class="img-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Add photo here
+      </div>
+    </div>
+    <p class="img-caption">Assembled stage showing ring gear, output carrier face, and output shaft.</p>
+
+    <hr class="divider">
+
+    <h2>Tools & Skills</h2>
+    <div class="tech-pills">
+      <span>SolidWorks</span>
+      <span>Gear Design</span>
+      <span>3D Printing (FDM)</span>
+      <span>Tolerance Analysis</span>
+      <span>DFM</span>
+      <span>Assembly & Testing</span>
+    </div>
+
+  </main>
+
+  <footer class="proj-footer">
+    <div class="inner">
+      <a href="../index.html" class="nav-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Back to portfolio
+      </a>
+      <a href="../index.html#projects" style="font-size:0.875rem; color: var(--ink-3);">Back to projects ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>

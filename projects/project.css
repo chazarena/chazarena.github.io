@@ -218,6 +218,11 @@ nav {
   object-fit: cover;
 }
 
+.proj-img-dark {
+  background: #111;
+  border-radius: var(--radius);
+}
+
 .img-caption {
   font-size: 0.78rem;
   color: var(--ink-3);
