@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charlie Herman — Mechanical Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-name">Charlie Herman</span>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">Mechanical Engineer</p>
+      <h1>Designing systems<br>that move, launch,<br>and endure.</h1>
+      <p class="hero-sub">Rocketry · Automotive · Structural Design · International Development</p>
+      <a href="#projects" class="btn">View my work</a>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <!-- Rocketry -->
+      <div class="project-card featured">
+        <div class="project-meta">
+          <span class="tag">Rocketry · University</span>
+          <span class="tag tag-year">2023 – 2025</span>
+        </div>
+        <h3>University Rocketry Program</h3>
+        <p class="project-role">Chief Engineer</p>
+        <p class="project-desc">
+          Led technical direction for a student rocketry team, overseeing propulsion, structures, and manufacturing.
+          Responsible for team-wide engineering decisions, safety reviews, and launch readiness sign-off.
+        </p>
+
+        <div class="sub-projects">
+          <div class="sub-card">
+            <h4>Hybrid Motor Sizing</h4>
+            <p>Developed MATLAB scripts to model and size a hybrid rocket motor, iterating on oxidiser–fuel ratios,
+            chamber pressure, and nozzle geometry to meet target thrust and specific impulse requirements.</p>
+            <div class="tech-pills">
+              <span>MATLAB</span><span>Propulsion</span><span>Thermodynamics</span>
+            </div>
+          </div>
+          <div class="sub-card">
+            <h4>Fuel Grain Spin Casting Machine</h4>
+            <p>Designed and built a spin casting rig to produce centrifugally-cast HTPB fuel grains with
+            consistent port geometry, eliminating voids and improving burn uniformity.</p>
+            <div class="tech-pills">
+              <span>Machine Design</span><span>Manufacturing</span><span>HTPB</span>
+            </div>
+          </div>
+          <div class="sub-card">
+            <h4>Fuel Grain Casting Process</h4>
+            <p>Developed and refined the end-to-end process for mixing, degassing, and casting HTPB propellant
+            grains — from tooling design through post-cure inspection and dimensional verification.</p>
+            <div class="tech-pills">
+              <span>Process Engineering</span><span>Materials</span><span>QA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tube Buggy -->
+      <div class="project-card">
+        <div class="project-meta">
+          <span class="tag">Personal Project</span>
+        </div>
+        <h3>Tube Body Buggy</h3>
+        <p class="project-desc">
+          Designed a tube-frame off-road buggy from the ground up — encompassing chassis layout,
+          roll-cage geometry, suspension kinematics, and drivetrain packaging.
+          Work included CAD modelling, FEA for structural validation, and materials selection.
+        </p>
+        <div class="tech-pills">
+          <span>CAD</span><span>FEA</span><span>Chassis Design</span><span>Suspension</span>
+        </div>
+      </div>
+
+      <!-- EWB -->
+      <div class="project-card">
+        <div class="project-meta">
+          <span class="tag">Engineers Without Borders</span>
+        </div>
+        <h3>EWB Challenge</h3>
+        <p class="project-desc">
+          Applied engineering design thinking to a real-world humanitarian challenge,
+          developing solutions in collaboration with partner communities.
+          Focused on low-cost, locally-manufacturable designs that meet the needs of under-resourced communities.
+        </p>
+        <div class="tech-pills">
+          <span>Human-Centred Design</span><span>Sustainable Engineering</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="tl-company">Toyota</span>
+            <span class="tl-date">2024 · Internship</span>
+          </div>
+          <div class="timeline-right">
+            <h4>Engineering Intern</h4>
+            <p>
+              Contributed to [team/department] at Toyota, working on [brief description of work —
+              e.g., manufacturing process improvements, tooling design, or quality systems].
+              Gained hands-on experience in a high-volume automotive production environment.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="tl-company">ASCOT Consulting Engineers</span>
+            <span class="tl-date">2024 · Internship</span>
+          </div>
+          <div class="timeline-right">
+            <h4>Engineering Intern</h4>
+            <p>
+              Supported a multi-disciplinary building services team at ASCOT, a Melbourne-based
+              consulting firm specialising in Mechanical, Electrical, Hydraulic, and Fire Safety engineering.
+              Assisted in [design deliverables / documentation / site reviews].
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="container about-grid">
+      <div>
+        <h2 class="section-title">About</h2>
+        <p>
+          I'm a mechanical engineering student with a focus on propulsion, structural design,
+          and hands-on build experience. Outside of rocketry, I'm drawn to problems where
+          precision manufacturing meets real-world constraints — whether that's a race buggy,
+          an aid project, or an automotive production line.
+        </p>
+        <p>
+          Based in Melbourne, Australia.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h5>Design & Analysis</h5>
+          <ul>
+            <li>MATLAB</li>
+            <li>CAD (SolidWorks / Fusion)</li>
+            <li>FEA</li>
+            <li>Propulsion modelling</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h5>Manufacturing</h5>
+          <ul>
+            <li>Casting & moulding</li>
+            <li>Machine design</li>
+            <li>Tube fabrication</li>
+            <li>Composites</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h5>Domains</h5>
+          <ul>
+            <li>Rocketry & propulsion</li>
+            <li>Automotive</li>
+            <li>Building services</li>
+            <li>International development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container contact-inner">
+      <h2>Get in touch</h2>
+      <p>Open to graduate roles, internships, and project collaborations.</p>
+      <a href="mailto:chazaherman@gmail.com" class="btn btn-light">chazaherman@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Charlie Herman</span>
+      <a href="https://github.com/charlieherman" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>
