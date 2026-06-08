@@ -42,8 +42,7 @@
     <p>
       Paraffin wax is an attractive hybrid fuel because of its high regression rate, low cost, and
       ease of handling. But casting a paraffin grain with a concentric, smooth port is harder than
-      it sounds — gravity-cast methods produce eccentric ports and surface voids that cause erratic
-      burn profiles and reduce motor predictability.
+      it sounds. Gravity-cast methods produce air bubbles and internal voids that cause unstable burn characteristics. Spin-cast fuel grains offer a monolithic structure. 
     </p>
     <p>
       ARES needed a repeatable in-house manufacturing process that could produce grains to the
@@ -62,15 +61,15 @@
     <h2>Design</h2>
     <p>
       The rig spins a cylindrical mould about its central axis while the paraffin solidifies.
-      Centrifugal force drives the melt outward, pressing it uniformly against the mould wall and
+      Centrifugal force drives the paraffin outward, pressing it uniformly against the mould wall and
       leaving a clean, concentric port along the axis. Key design decisions:
     </p>
     <ul>
-      <li>Motor and belt-drive selected to achieve the minimum RPM required to overcome gravity-induced eccentricity for the paraffin density and grain geometry</li>
-      <li>Mould end-caps designed with a controlled pour aperture to minimise turbulence during filling</li>
+      <li>Motor and belt-drive selected so various RMPs could be tested to determine the optimal settings for the fuel grain we desire</li>
       <li>Alignment features machined into the mould to ensure coaxiality of the port mandrel</li>
       <li>Insulated enclosure to slow cooling rate and reduce residual stress in the grain</li>
-      <li>Quick-release locking system for safe mould removal after solidification</li>
+      <li>System mounted on t-slot extrusion so the length of fuel grain required could be changed</li>
+         <li>ESC controls motor via programmed Arduino (PWM)</li>
     </ul>
 
     <div class="img-grid img-grid-2">
@@ -90,15 +89,9 @@
     <p>
       The casting procedure was developed iteratively — each grain was inspected by sectioning a
       test sample to check for voids, port concentricity, and surface finish before the process
-      was locked in for production.
+      was locked in for production. Chemical safety and hazard operability studies were completed and submitted before any spin casting. 
     </p>
-    <ul>
-      <li>Paraffin melted to controlled temperature to achieve correct viscosity before pour</li>
-      <li>Mould pre-heated to reduce thermal shock and surface delamination</li>
-      <li>Rig brought to operating speed before pour to ensure immediate centrifugal action</li>
-      <li>Cooling rate managed to avoid cracking from differential thermal contraction</li>
-      <li>Final grain inspected dimensionally and visually before acceptance</li>
-    </ul>
+
 
     <div class="img-grid img-grid-2">
       <div class="img-slot">
@@ -122,6 +115,7 @@
       <span>Process Development</span>
       <span>Paraffin Propellant</span>
       <span>DFM</span>
+          <span>Electronics</span>
     </div>
 
   </main>
