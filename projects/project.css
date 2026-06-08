@@ -210,6 +210,22 @@ nav {
   font-weight: 500;
 }
 
+/* ── Real images ── */
+.proj-img {
+  width: 100%;
+  border-radius: var(--radius);
+  display: block;
+  object-fit: cover;
+}
+
+.img-caption {
+  font-size: 0.78rem;
+  color: var(--ink-3);
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
 /* ── Spec table ── */
 .spec-table {
   width: 100%;

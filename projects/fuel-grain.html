@@ -30,8 +30,7 @@
       <h1>Paraffin Fuel Grain Spin-Cast System</h1>
       <p class="proj-hero-sub">
         Designed and fabricated a spin-casting rig to manufacture paraffin fuel grains with consistent
-        cylindrical port geometry — enabling repeatable, void-free hybrid motor propellant production
-        in-house.
+        cylindrical port geometry — enabling repeatable, void-free hybrid motor propellant production in-house.
       </p>
     </div>
   </header>
@@ -40,69 +39,64 @@
 
     <h2>Problem</h2>
     <p>
-      Paraffin wax is an attractive hybrid fuel because of its high regression rate, low cost, and
-      ease of handling. But casting a paraffin grain with a concentric, smooth port is harder than
-      it sounds. Gravity-cast methods produce air bubbles and internal voids that cause unstable burn characteristics. Spin-cast fuel grains offer a monolithic structure. 
+      Paraffin wax is an attractive hybrid fuel due to its high regression rate, low cost, and ease of handling.
+      Gravity-cast methods produce air bubbles and internal voids that cause unstable burn characteristics.
+      Spin-cast fuel grains offer a monolithic, void-free structure with a concentric port — but ARES had no
+      access to industrial casting equipment.
     </p>
-    <p>
-      ARES needed a repeatable in-house manufacturing process that could produce grains to the
-      tolerances required by the motor sizing model, without access to industrial casting equipment.
-    </p>
-
-    <div class="img-grid img-grid-1">
-      <div class="img-slot tall">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        Spin-cast rig — full assembly photo
-      </div>
-    </div>
 
     <hr class="divider">
 
-    <h2>Design</h2>
+    <h2>The Rig</h2>
     <p>
-      The rig spins a cylindrical mould about its central axis while the paraffin solidifies.
-      Centrifugal force drives the paraffin outward, pressing it uniformly against the mould wall and
-      leaving a clean, concentric port along the axis. Key design decisions:
+      The rig spins a cylindrical mould about its central axis while the paraffin solidifies. Centrifugal
+      force drives the melt outward uniformly, leaving a clean concentric port along the axis.
     </p>
-    <ul>
-      <li>Motor and belt-drive selected so various RMPs could be tested to determine the optimal settings for the fuel grain we desire</li>
-      <li>Alignment features machined into the mould to ensure coaxiality of the port mandrel</li>
-      <li>Insulated enclosure to slow cooling rate and reduce residual stress in the grain</li>
-      <li>System mounted on t-slot extrusion so the length of fuel grain required could be changed</li>
-         <li>ESC controls motor via programmed Arduino (PWM)</li>
-    </ul>
 
     <div class="img-grid img-grid-2">
-      <div class="img-slot">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        CAD model of rig
-      </div>
-      <div class="img-slot">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        Drive system detail
-      </div>
+      <img src="images/rig-assembly.jpg" alt="Spin-cast rig assembly — motor, bearing block, and mould on build table" class="proj-img" />
+      <img src="images/rig-lab.jpg" alt="Rig operational in lab — mounted on t-slot extrusion with acrylic safety shield and bench power supply" class="proj-img" />
     </div>
+    <p class="img-caption">Left: rig during assembly. Right: operational setup — Arduino PWM via ESC, bench power supply, acrylic containment shield.</p>
+
+    <p>Key design decisions:</p>
+    <ul>
+      <li>Motor and belt-drive sized to test variable RPM — optimal spin speed determined experimentally for the target grain geometry</li>
+      <li>Mounted on t-slot extrusion so grain length can be changed without redesigning the rig</li>
+      <li>ESC controls motor speed via Arduino PWM</li>
+      <li>Alignment features machined into mould end-caps to ensure coaxiality of the port mandrel</li>
+      <li>Insulated enclosure to slow cooling rate and reduce residual stress</li>
+    </ul>
 
     <hr class="divider">
 
     <h2>Casting Process</h2>
     <p>
-      The casting procedure was developed iteratively — each grain was inspected by sectioning a
-      test sample to check for voids, port concentricity, and surface finish before the process
-      was locked in for production. Chemical safety and hazard operability studies were completed and submitted before any spin casting. 
+      The procedure was developed iteratively through test casts — each grain sectioned and inspected for
+      voids, port concentricity, and surface finish. Chemical safety and hazard operability studies were
+      completed and submitted before any spin casting commenced.
     </p>
 
-
-    <div class="img-grid img-grid-2">
-      <div class="img-slot">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        Finished fuel grain
-      </div>
-      <div class="img-slot">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        Cross-section showing port geometry
-      </div>
+    <div class="img-grid img-grid-1">
+      <img src="images/caliper.jpg" alt="Digital calipers measuring outer diameter of a cast paraffin fuel grain — reading 57.12 mm" class="proj-img" />
     </div>
+    <p class="img-caption">Dimensional inspection of a cast grain — outer diameter measured at 57.12 mm.</p>
+
+    <hr class="divider">
+
+    <h2>Gyroid Casting Development</h2>
+    <p>
+      A parallel development investigated casting paraffin into ABS 3D-printed gyroid structures. The
+      gyroid geometry — a triply periodic minimal surface — dramatically increases the fuel surface area
+      compared to a plain cylindrical port, which raises regression rate and total thrust without
+      changing the grain envelope. The ABS scaffold is printed, filled with molten paraffin, then
+      retained as-is or dissolved post-cast depending on the test objective.
+    </p>
+
+    <div class="img-grid img-grid-1">
+      <img src="images/gyroid.jpg" alt="ABS 3D-printed gyroid fuel grain structure — dark blue lattice with complex minimal surface geometry" class="proj-img" />
+    </div>
+    <p class="img-caption">ABS-printed gyroid structure prior to paraffin infill.</p>
 
     <hr class="divider">
 
@@ -111,11 +105,12 @@
       <span>Machine Design</span>
       <span>SolidWorks</span>
       <span>Fabrication</span>
-      <span>Metalworking</span>
+      <span>Arduino / PWM</span>
       <span>Process Development</span>
       <span>Paraffin Propellant</span>
+      <span>3D Printing</span>
       <span>DFM</span>
-          <span>Electronics</span>
+      <span>Electronics</span>
     </div>
 
   </main>
