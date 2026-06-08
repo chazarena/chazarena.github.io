@@ -415,13 +415,14 @@ nav ul a:hover { color: var(--ink); }
 }
 
 .profile-photo {
-  width: 96px;
-  height: 96px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
   flex-shrink: 0;
   border: 2px solid var(--line);
+  image-orientation: from-image;
 }
 
 .skills-grid {
