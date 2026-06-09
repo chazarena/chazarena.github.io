@@ -458,15 +458,6 @@ nav ul a:hover { color: var(--ink); }
   transform: translateX(3px);
 }
 
-@media (max-width: 700px) {
-  .timeline-item-link {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-    margin: 0 -0.5rem;
-    padding: 1.5rem 0.5rem;
-  }
-}
-
 .other-exp-link {
   display: inline-flex;
   align-items: center;
@@ -611,8 +602,18 @@ footer a:hover { color: var(--ink); }
 [data-reveal-delay="3"] { transition-delay: 0.3s; }
 
 /* ── Responsive ── */
+
+/* Tablet */
+@media (max-width: 860px) {
+  .section { padding: 4.5rem 1.5rem; }
+  .hero { padding: 4rem 1.5rem; }
+  .hero-inner { gap: 2.5rem; }
+  .project-org-logo { width: 100px; height: 100px; }
+}
+
+/* Mobile — stacking layouts */
 @media (max-width: 700px) {
-  nav ul { gap: 1.25rem; }
+  nav ul { gap: 1.1rem; }
 
   .hero-inner {
     grid-template-columns: 1fr;
@@ -620,14 +621,19 @@ footer a:hover { color: var(--ink); }
   }
 
   .hero-photo-wrap { order: -1; display: flex; justify-content: center; }
-
   .hero-photo { width: 180px; height: 180px; }
-
   .hero-actions { justify-content: center; }
 
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 0.5rem;
+  }
+
+  .timeline-item-link {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin: 0 -0.5rem;
+    padding: 1.5rem 0.5rem;
   }
 
   .about-grid {
@@ -636,4 +642,50 @@ footer a:hover { color: var(--ink); }
   }
 
   .sub-projects { grid-template-columns: 1fr; }
+}
+
+/* Small mobile — nav wrap + tighter spacing */
+@media (max-width: 540px) {
+  nav {
+    height: auto;
+    padding: 0.6rem 1.25rem;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  nav ul {
+    width: 100%;
+    gap: 0.8rem;
+    padding-bottom: 0.1rem;
+  }
+
+  nav ul a { font-size: 0.8rem; }
+
+  .section { padding: 3rem 1.25rem; }
+  .hero { padding: 2.5rem 1.25rem; }
+  .hero-photo { width: 150px; height: 150px; }
+  .hero-sub { font-size: 0.95rem; }
+
+  .btn {
+    min-height: 44px;
+    padding: 0.75rem 1.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-card { padding: 1.25rem; }
+  .project-card-header { flex-direction: column; gap: 1rem; }
+  .project-org-logo { width: 72px; height: 72px; }
+
+  .rocket-banner { padding: 1rem 0; }
+
+  .timeline-item-link {
+    margin: 0 -0.75rem;
+    padding: 1.25rem 0.75rem;
+  }
+
+  .contact-inner h2 { font-size: 1.6rem; }
+
+  .section-title { margin-bottom: 2rem; }
 }
