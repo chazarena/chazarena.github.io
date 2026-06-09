@@ -414,6 +414,13 @@ nav ul a:hover { color: var(--ink); }
   color: var(--ink-3);
 }
 
+.tl-logo {
+  width: 90px;
+  height: auto;
+  margin-top: 0.75rem;
+  opacity: 0.85;
+}
+
 .timeline-right h4 {
   font-size: 1rem;
   font-weight: 600;
