@@ -78,6 +78,15 @@ nav ul a {
 
 nav ul a:hover { color: var(--ink); }
 
+.nav-icon-link {
+  display: flex;
+  align-items: center;
+  color: var(--ink-2);
+  transition: color 0.15s;
+}
+
+.nav-icon-link:hover { color: var(--ink); }
+
 /* ── Hero ── */
 .hero {
   min-height: calc(100vh - 56px);
