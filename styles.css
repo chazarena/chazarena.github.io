@@ -285,6 +285,27 @@ nav ul a:hover { color: var(--ink); }
   margin-bottom: 1.5rem;
 }
 
+/* ── Project card header with logo ── */
+.project-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.project-card-header-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-org-logo {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
 /* ── Sub-project cards ── */
 .sub-projects {
   display: grid;
