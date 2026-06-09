@@ -45,8 +45,7 @@
     <p>
       Paraffin wax is an attractive hybrid fuel due to its high regression rate, low cost, and ease of handling.
       Gravity-cast methods produce air bubbles and internal voids that cause unstable burn characteristics.
-      Spin-cast fuel grains offer a monolithic, void-free structure with a concentric port — but ARES had no
-      access to industrial casting equipment.
+      Spin-cast fuel grains offer a monolithic, void-free structure with a concentric port.
     </p>
 
     <hr class="divider">
@@ -66,7 +65,7 @@
     <p>Key design decisions:</p>
     <ul>
       <li>Motor and belt-drive sized to test variable RPM — optimal spin speed determined experimentally for the target grain geometry</li>
-      <li>Mounted on t-slot extrusion so grain length can be changed without redesigning the rig</li>
+      <li>Mounted on a T-slot extrusion so grain length can be changed without redesigning the rig</li>
       <li>ESC controls motor speed via Arduino PWM</li>
       <li>Alignment features machined into mould end-caps to ensure coaxiality of the port mandrel</li>
       <li>Insulated enclosure to slow cooling rate and reduce residual stress</li>
@@ -76,7 +75,7 @@
 
     <h2>Casting Process</h2>
     <p>
-      The procedure was developed iteratively through test casts — each grain sectioned and inspected for
+      The procedure was developed iteratively through test casts. Each grain was sectioned and inspected for
       voids, port concentricity, and surface finish. Chemical safety and hazard operability studies were
       completed and submitted before any spin casting commenced.
     </p>
@@ -91,8 +90,7 @@
 
     <h2>CAD Design</h2>
     <p>
-      The rig was fully modelled in SolidWorks before fabrication — enabling interference checks,
-      bearing selection, and belt-drive geometry to be resolved on screen before cutting metal.
+      The rig was fully modelled in Onshape before fabrication. 
     </p>
 
     <div class="img-grid img-grid-2">
@@ -105,17 +103,15 @@
 
     <h2>Gyroid Casting Development</h2>
     <p>
-      A parallel development investigated casting paraffin into ABS 3D-printed gyroid structures. The
-      gyroid geometry — a triply periodic minimal surface — dramatically increases the fuel surface area
-      compared to a plain cylindrical port, which raises regression rate and total thrust without
-      changing the grain envelope. The ABS scaffold is printed, filled with molten paraffin, then
-      retained as-is or dissolved post-cast depending on the test objective.
+      I conducted a parallel development investigating casting paraffin into ABS 3D-printed gyroid structures. The
+      gyroid geometry increases the strength of the fuel. Since Paraffin is notorious for cracking during ignition, the ABS gyroid offers significantly better strength through the grain whilst maintaining a high regression rate. 
+      The ABS gyroid is printed, filled with molten paraffin, then used as an alternative fuel grain. 
     </p>
 
     <div class="img-grid img-grid-1">
       <img src="images/gyroid.jpg" alt="ABS 3D-printed gyroid fuel grain structure — dark blue lattice with complex minimal surface geometry" class="proj-img" loading="lazy" />
     </div>
-    <p class="img-caption">ABS-printed gyroid structure prior to paraffin infill.</p>
+    <p class="img-caption">ABS-printed gyroid structure before paraffin infill.</p>
 
     <hr class="divider">
 
