@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stackable planetary gearbox designed and 3D-printed by Charles Herman — involute gear geometry, FDM tolerance analysis, and modular stage assembly." />
   <title>Stackable Planetary Gearbox · Charles Herman</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="project.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
 
   <nav>
     <a href="../index.html" class="nav-back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"/>
       </svg>
       Back
@@ -35,7 +39,7 @@
     </div>
   </header>
 
-  <main class="proj-content">
+  <main id="main" class="proj-content">
 
     <h2>Overview</h2>
     <p>
@@ -46,8 +50,8 @@
     </p>
 
     <div class="img-grid img-grid-2">
-      <img src="images/gearbox-cad-full.png" alt="SolidWorks full assembly render of the planetary gearbox" class="proj-img proj-img-dark" />
-      <img src="images/gearbox-cad-section.png" alt="SolidWorks cross-section render revealing internal gear stages" class="proj-img proj-img-dark" />
+      <img src="images/gearbox-cad-full.png" alt="SolidWorks full assembly render of the planetary gearbox" class="proj-img proj-img-dark" loading="lazy" />
+      <img src="images/gearbox-cad-section.png" alt="SolidWorks cross-section render revealing internal gear stages" class="proj-img proj-img-dark" loading="lazy" />
     </div>
     <p class="img-caption">SolidWorks renders — full assembly (left) and cross-section showing internal gear stages (right).</p>
 
@@ -67,7 +71,7 @@
     </ul>
 
     <div class="img-grid img-grid-1">
-      <img src="images/gearbox-exploded.jpg" alt="All planetary gearbox components laid out on workbench before assembly" class="proj-img" />
+      <img src="images/gearbox-exploded.jpg" alt="All planetary gearbox components laid out on workbench before assembly" class="proj-img" loading="lazy" />
     </div>
     <p class="img-caption">All components laid out prior to assembly — sun gears, planet carriers, ring housings, and output stages.</p>
 
@@ -81,12 +85,8 @@
       all stages.
     </p>
 
-    <div class="img-grid img-grid-2">
-      <img src="images/gearbox-assembly.jpg" alt="Assembled planetary gearbox stage held in hand, showing ring gear and output face" class="proj-img" />
-      <div class="img-slot">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        Add photo here
-      </div>
+    <div class="img-grid img-grid-1">
+      <img src="images/gearbox-assembly.jpg" alt="Assembled planetary gearbox stage held in hand, showing ring gear and output face" class="proj-img" loading="lazy" />
     </div>
     <p class="img-caption">Assembled stage showing ring gear, output carrier face, and output shaft.</p>
 
@@ -107,12 +107,12 @@
   <footer class="proj-footer">
     <div class="inner">
       <a href="../index.html" class="nav-back">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6"/>
         </svg>
         Back to portfolio
       </a>
-      <a href="../index.html#projects" style="font-size:0.875rem; color: var(--ink-3);">Back to projects ↑</a>
+      <a href="../index.html#projects" class="proj-next-link">Back to projects ↑</a>
     </div>
   </footer>
 

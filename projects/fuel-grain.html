@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paraffin fuel grain spin-cast system designed and fabricated by Charles Herman for ARES Rocketry — spin-casting rig, process development, and gyroid fuel grain research." />
   <title>Paraffin Fuel Grain Spin-Cast System — ARES Rocketry · Charles Herman</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="project.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
 
   <nav>
     <a href="../index.html" class="nav-back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="15 18 9 12 15 6"/>
       </svg>
       Back
@@ -35,7 +39,7 @@
     </div>
   </header>
 
-  <main class="proj-content">
+  <main id="main" class="proj-content">
 
     <h2>Problem</h2>
     <p>
@@ -54,8 +58,8 @@
     </p>
 
     <div class="img-grid img-grid-2">
-      <img src="images/rig-assembly.jpg" alt="Spin-cast rig assembly — motor, bearing block, and mould on build table" class="proj-img" />
-      <img src="images/rig-lab.jpg" alt="Rig operational in lab — mounted on t-slot extrusion with acrylic safety shield and bench power supply" class="proj-img" />
+      <img src="images/rig-assembly.jpg" alt="Spin-cast rig assembly — motor, bearing block, and mould on build table" class="proj-img" loading="lazy" />
+      <img src="images/rig-lab.jpg" alt="Rig operational in lab — mounted on t-slot extrusion with acrylic safety shield and bench power supply" class="proj-img" loading="lazy" />
     </div>
     <p class="img-caption">Left: rig during assembly. Right: operational setup — Arduino PWM via ESC, bench power supply, acrylic containment shield.</p>
 
@@ -78,8 +82,8 @@
     </p>
 
     <div class="img-grid img-grid-2">
-      <img src="images/fuel-grain-hand.jpg" alt="Cast paraffin fuel grain held in hand — showing concentric port through the cylindrical grain" class="proj-img" />
-      <img src="images/caliper.jpg" alt="Digital calipers measuring outer diameter of a cast paraffin fuel grain — reading 57.12 mm" class="proj-img" />
+      <img src="images/fuel-grain-hand.jpg" alt="Cast paraffin fuel grain held in hand — showing concentric port through the cylindrical grain" class="proj-img" loading="lazy" />
+      <img src="images/caliper.jpg" alt="Digital calipers measuring outer diameter of a cast paraffin fuel grain — reading 57.12 mm" class="proj-img" loading="lazy" />
     </div>
     <p class="img-caption">Left: cast paraffin grain showing the concentric port produced by spin casting. Right: dimensional inspection — outer diameter measured at 57.12 mm.</p>
 
@@ -92,8 +96,8 @@
     </p>
 
     <div class="img-grid img-grid-2">
-      <img src="images/spincast-cad-iso.png" alt="SolidWorks isometric render of spin-cast rig assembly" class="proj-img" />
-      <img src="images/spincast-cad-front.png" alt="SolidWorks front elevation of spin-cast rig assembly" class="proj-img" />
+      <img src="images/spincast-cad-iso.png" alt="SolidWorks isometric render of spin-cast rig assembly" class="proj-img" loading="lazy" />
+      <img src="images/spincast-cad-front.png" alt="SolidWorks front elevation of spin-cast rig assembly" class="proj-img" loading="lazy" />
     </div>
     <p class="img-caption">SolidWorks renders — isometric assembly view and front elevation.</p>
 
@@ -109,7 +113,7 @@
     </p>
 
     <div class="img-grid img-grid-1">
-      <img src="images/gyroid.jpg" alt="ABS 3D-printed gyroid fuel grain structure — dark blue lattice with complex minimal surface geometry" class="proj-img" />
+      <img src="images/gyroid.jpg" alt="ABS 3D-printed gyroid fuel grain structure — dark blue lattice with complex minimal surface geometry" class="proj-img" loading="lazy" />
     </div>
     <p class="img-caption">ABS-printed gyroid structure prior to paraffin infill.</p>
 
@@ -133,12 +137,12 @@
   <footer class="proj-footer">
     <div class="inner">
       <a href="../index.html" class="nav-back">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6"/>
         </svg>
         Back to portfolio
       </a>
-      <a href="../index.html#projects" style="font-size:0.875rem; color: var(--ink-3);">Back to projects ↑</a>
+      <a href="../index.html#projects" class="proj-next-link">Back to projects ↑</a>
     </div>
   </footer>
 
