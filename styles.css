@@ -79,8 +79,9 @@ nav ul a {
 nav ul a:hover { color: var(--ink); }
 
 .nav-icon-link {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
   color: var(--ink-2);
   transition: color 0.15s;
 }
@@ -450,6 +451,21 @@ nav ul a:hover { color: var(--ink); }
 
 .other-exp-link:hover {
   color: var(--accent);
+}
+
+/* ── Rocket Banner ── */
+.rocket-banner {
+  background: var(--bg);
+  padding: 2rem 0;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.rocket-banner-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* ── About ── */
