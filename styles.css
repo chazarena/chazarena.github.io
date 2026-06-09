@@ -487,6 +487,8 @@ nav ul a:hover { color: var(--ink); }
   height: auto;
 }
 
+#about .section-title { margin-bottom: 1.25rem; }
+
 /* ── About ── */
 .about-grid {
   display: grid;
