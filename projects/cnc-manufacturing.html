@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Charles Herman — CNC manufacturing at ARES Rocketry. Fusion 360 CAM programming, Tormach 3-axis CNC machining, and 3D-printed soft jaw workholding for precision propulsion and recovery components." />
+  <title>CNC Manufacturing — ARES Rocketry · Charles Herman</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav>
+    <a href="../index.html" class="nav-back">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      Back
+    </a>
+    <span class="nav-name">Charles Herman</span>
+  </nav>
+
+  <header class="proj-hero">
+    <div class="proj-hero-inner">
+      <div class="proj-tag-row">
+        <span class="tag">ARES Rocketry · University of Melbourne</span>
+        <span class="tag">2024 – Present</span>
+      </div>
+      <h1>CNC Manufacturing</h1>
+      <p class="proj-hero-sub">
+        Programming and operating the ARES 3-axis Tormach CNC mill to produce precision propulsion
+        and recovery components — from CAM setup in Fusion 360 through to finished aluminium parts.
+      </p>
+    </div>
+  </header>
+
+  <main id="main" class="proj-content">
+
+    <h2>Overview</h2>
+    <p>
+      As part of my role at ARES, I handle the full manufacturing pipeline for machined components — writing
+      CAM toolpaths in Fusion 360, setting up workholding, operating the Tormach 1100MX, and post-processing
+      parts to the tolerances required for propulsion and recovery systems.
+    </p>
+    <p>
+      For components with complex geometry that standard vices can't hold reliably, I design and 3D-print
+      custom soft jaws — a fast, low-cost alternative to machined aluminium jaws that lets us hold
+      irregular or near-net-shape parts securely through multiple setups.
+    </p>
+
+    <table class="spec-table">
+      <tr><td>Machine</td><td>Tormach 1100MX — 3-axis CNC mill</td></tr>
+      <tr><td>CAM software</td><td>Fusion 360</td></tr>
+      <tr><td>Materials</td><td>6061 Aluminium, Delrin</td></tr>
+      <tr><td>Components</td><td>Recovery rail guides, spring piston mounts, structural brackets</td></tr>
+      <tr><td>Workholding</td><td>Standard vice + 3D-printed custom soft jaws</td></tr>
+    </table>
+
+    <hr class="divider">
+
+    <h2>CAM Programming</h2>
+    <p>
+      Each component starts with a Fusion 360 CAM setup — selecting operations, tools, feeds and speeds,
+      and simulating the full toolpath before sending G-code to the machine. Multi-setup parts are broken
+      into operations that can be re-fixtured reliably, minimising accumulated error across setups.
+    </p>
+    <p>
+      For the spring piston mounts, the CAM involved multiple operations: adaptive clearing to remove bulk
+      material, 2D contour finishing, drilling, and chamfering — all sequenced to maintain part rigidity
+      through the cut.
+    </p>
+
+    <div class="img-grid img-grid-2">
+      <img src="images/cnc-soft-jaw2.jpg" alt="Fusion 360 CAM toolpath for recovery rail guide components" class="proj-img" loading="lazy" />
+      <img src="images/cnc-spring-piston-cam2.jpg" alt="Fusion 360 CAM multi-operation setup for the spring piston mount" class="proj-img" loading="lazy" />
+    </div>
+    <p class="img-caption">Left: Fusion 360 CAM setup for recovery rail guide components. Right: Spring piston mount — multi-operation CAM with adaptive clearing, contour finishing, drilling, and chamfer.</p>
+
+    <hr class="divider">
+
+    <h2>Machining</h2>
+    <p>
+      Parts are machined on the team's Tormach 1100MX using flood coolant for aluminium cuts. Fixturing
+      and datum setup are done manually at the start of each session, with offsets verified against
+      reference surfaces before running any toolpaths.
+    </p>
+
+    <div class="img-grid img-grid-2">
+      <img src="images/cnc-tormach-cutting.jpg" alt="Tormach 1100MX CNC mill cutting an ARES component with flood coolant" class="proj-img" loading="lazy" />
+      <img src="images/cnc-bench-parts.jpg" alt="Machined ARES recovery rail components and tooling laid out on the workbench" class="proj-img" loading="lazy" />
+    </div>
+    <p class="img-caption">Left: Tormach 1100MX during a machining run — flood coolant on an aluminium component. Right: Finished recovery rail components and tooling at the bench.</p>
+
+    <hr class="divider">
+
+    <h2>Finished Components</h2>
+    <p>
+      Machined parts are deburred, inspected, and checked against drawing tolerances before being handed
+      off to the relevant sub-team. The recovery rail guides shown below were machined from 6061 aluminium
+      stock and require a consistent slot profile to interface correctly with the launch rail.
+    </p>
+
+    <div class="img-grid img-grid-1">
+      <img src="images/cnc-rail-finished.jpg" alt="Finished CNC-machined aluminium recovery rail guides" class="proj-img" loading="lazy" />
+    </div>
+    <p class="img-caption">Finished 6061 aluminium recovery rail guides — machined to drawing tolerances on the Tormach.</p>
+
+    <hr class="divider">
+
+    <h2>Tools & Methods</h2>
+    <div class="tech-pills">
+      <span>Fusion 360 CAM</span>
+      <span>Tormach 1100MX</span>
+      <span>3-Axis Milling</span>
+      <span>2D Adaptive Clearing</span>
+      <span>Contour Finishing</span>
+      <span>Soft Jaw Design</span>
+      <span>3D Printing</span>
+      <span>6061 Aluminium</span>
+      <span>G-code</span>
+      <span>Workholding</span>
+    </div>
+
+  </main>
+
+  <footer class="proj-footer">
+    <div class="inner">
+      <a href="../index.html" class="nav-back">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Back to portfolio
+      </a>
+    </div>
+  </footer>
+
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
