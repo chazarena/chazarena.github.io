@@ -33,8 +33,8 @@
       </div>
       <h1>CNC Manufacturing</h1>
       <p class="proj-hero-sub">
-        Programming and operating the ARES 3-axis Tormach CNC mill to produce precision propulsion
-        and recovery components — from CAM setup in Fusion 360 through to finished aluminium parts.
+        Programming and operating the 3-axis Tormach CNC mill to produce precision
+       ARES parts — from CAM setup in Fusion 360 through to finished aluminium 6061 parts.
       </p>
     </div>
   </header>
@@ -43,21 +43,18 @@
 
     <h2>Overview</h2>
     <p>
-      As part of my role at ARES, I handle the full manufacturing pipeline for machined components — writing
-      CAM toolpaths in Fusion 360, setting up workholding, operating the Tormach 1100MX, and post-processing
-      parts to the tolerances required for propulsion and recovery systems.
+      As part of my role at ARES, I handle a portion of the manufacturing pipeline for machined components — creating
+      CAM toolpaths in Fusion 360, setting up workholding, stock procurement, operating the Tormach 1100MX, and maintaining tolerances specified in engineering drawings. 
     </p>
     <p>
-      For components with complex geometry that standard vices can't hold reliably, I design and 3D-print
-      custom soft jaws — a fast, low-cost alternative to machined aluminium jaws that lets us hold
-      irregular or near-net-shape parts securely through multiple setups.
+      For components with off-axis geometries, I have designed 3D-printable soft jaws to remove the need for higher-axis milling 
     </p>
 
     <table class="spec-table">
       <tr><td>Machine</td><td>Tormach 1100MX — 3-axis CNC mill</td></tr>
       <tr><td>CAM software</td><td>Fusion 360</td></tr>
-      <tr><td>Materials</td><td>6061 Aluminium, Delrin</td></tr>
-      <tr><td>Components</td><td>Recovery rail guides, spring piston mounts, structural brackets</td></tr>
+      <tr><td>Materials</td><td>6061 Aluminium</td></tr>
+      <tr><td>Components</td><td>Recovery side hatch reinforcement struts, spring piston mounts, structural hatch tabs</td></tr>
       <tr><td>Workholding</td><td>Standard vice + 3D-printed custom soft jaws</td></tr>
     </table>
 
@@ -66,28 +63,21 @@
     <h2>CAM Programming</h2>
     <p>
       Each component starts with a Fusion 360 CAM setup — selecting operations, tools, feeds and speeds,
-      and simulating the full toolpath before sending G-code to the machine. Multi-setup parts are broken
-      into operations that can be re-fixtured reliably, minimising accumulated error across setups.
-    </p>
-    <p>
-      For the spring piston mounts, the CAM involved multiple operations: adaptive clearing to remove bulk
-      material, 2D contour finishing, drilling, and chamfering — all sequenced to maintain part rigidity
-      through the cut.
+      and simulating the full toolpath before sending G-code to the machine. 
     </p>
 
     <div class="img-grid img-grid-2">
-      <img src="images/cnc-soft-jaw2.jpg" alt="Fusion 360 CAM toolpath for recovery rail guide components" class="proj-img" loading="lazy" />
+      <img src="images/cnc-soft-jaw2.jpg" alt="Fusion 360 CAM toolpath for recovery hatch struts with soft jaws" class="proj-img" loading="lazy" />
       <img src="images/cnc-spring-piston-cam2.jpg" alt="Fusion 360 CAM multi-operation setup for the spring piston mount" class="proj-img" loading="lazy" />
     </div>
-    <p class="img-caption">Left: Fusion 360 CAM setup for recovery rail guide components. Right: Spring piston mount — multi-operation CAM with adaptive clearing, contour finishing, drilling, and chamfer.</p>
+    <p class="img-caption">Left: Fusion 360 CAM setup for recovery strut. Right: Spring piston mount </p>
 
     <hr class="divider">
 
     <h2>Machining</h2>
     <p>
-      Parts are machined on the team's Tormach 1100MX using flood coolant for aluminium cuts. Fixturing
-      and datum setup are done manually at the start of each session, with offsets verified against
-      reference surfaces before running any toolpaths.
+      Parts are machined on the university's Tormach 1100MX with flood coolant for 6061 aluminium. Fixturing
+      and datum setup are done manually. 
     </p>
 
     <div class="img-grid img-grid-2">
@@ -101,8 +91,7 @@
     <h2>Finished Components</h2>
     <p>
       Machined parts are deburred, inspected, and checked against drawing tolerances before being handed
-      off to the relevant sub-team. The recovery rail guides shown below were machined from 6061 aluminium
-      stock and require a consistent slot profile to interface correctly with the launch rail.
+      off to the relevant sub-team.
     </p>
 
     <div class="img-grid img-grid-1">
